@@ -69,20 +69,20 @@ Start-Process PowerShell -ArgumentList "-NoL -C Install-Module OSD -Force -Verbo
 
 if ([System.Environment]::OSVersion.Version -ge (New-Object Version "10.0.22000.0")) {
 write-Host -ForegroundColor DarkGray "Start Built-In Apps Cleanup"
-Start-Process PowerShell -ArgumentList "-NoL -C Invoke-WebPSScript https://raw.githubusercontent.com/wbilab/osdcloud/main/Windows11CleanupBuiltinApps.ps1" -Wait
+Start-Process PowerShell -ArgumentList "-NoL -C Invoke-WebPSScript https://raw.githubusercontent.com/gorilla1968/osdcloud_wbilab/main/Windows11CleanupBuiltinApps.ps1" -Wait
 }
 
 Write-Host -ForegroundColor DarkGray "Executing Keyboard Language Skript"
-Start-Process PowerShell -ArgumentList "-NoL -C Invoke-WebPSScript https://raw.githubusercontent.com/wbilab/osdcloud/main/Set-KeyboardLanguage.ps1" -Wait
+Start-Process PowerShell -ArgumentList "-NoL -C Invoke-WebPSScript https://raw.githubusercontent.com/gorilla1968/osdcloud_wbilab/main/Set-KeyboardLanguage.ps1" -Wait
 
 Write-Host -ForegroundColor DarkGray "Executing VISI Autopilot Registration"
-Start-Process PowerShell -ArgumentList "-NoL -C Invoke-WebPSScript https://raw.githubusercontent.com/wbilab/osdcloud/main/VISI_OSDCloud_AutoPilot.ps1" -Wait
+Start-Process PowerShell -ArgumentList "-NoL -C Invoke-WebPSScript https://raw.githubusercontent.com/gorilla1968/osdcloud_wbilab/main/VISI_OSDCloud_AutoPilot.ps1" -Wait
 
 #Write-Host -ForegroundColor DarkGray "Executing OOBEDeploy Script fomr OSDCloud Module"
 #Start-Process PowerShell -ArgumentList "-NoL -C Start-OOBEDeploy" -Wait
 
 Write-Host -ForegroundColor DarkGray "Executing Cleanup Script"
-Start-Process PowerShell -ArgumentList "-NoL -C Invoke-WebPSScript https://raw.githubusercontent.com/wbilab/osdcloud/main/CleanUp.ps1" -Wait
+Start-Process PowerShell -ArgumentList "-NoL -C Invoke-WebPSScript https://raw.githubusercontent.com/gorilla1968/osdcloud_wbilab/main/CleanUp.ps1" -Wait
 
 Write-Host -ForegroundColor DarkGray "Restarting Computer"
 Start-Process PowerShell -ArgumentList "-NoL -C Restart-Computer -Force" -Wait
