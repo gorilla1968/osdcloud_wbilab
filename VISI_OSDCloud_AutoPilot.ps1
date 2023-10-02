@@ -105,7 +105,7 @@ $Button1.Add_Click({
 
 $Form.WindowState = "Minimized" # Minimiere das GUI-Fenster
 cd $workingDirectory
-.\Get-WindowsAutoPilotInfo.ps1 -GroupTag InCloud -Online -Assign
+.\Get-WindowsAutoPilotInfo.ps1 -GroupTag Lab -Online -Assign
 $Form.Close() # Schliesse das Programm
 })
 
@@ -118,7 +118,7 @@ $Button2.Add_Click({
 
 $Form.WindowState = "Minimized" # Minimiere das GUI-Fenster
 cd $workingDirectory
-.\Get-WindowsAutoPilotInfo.ps1 -GroupTag Hybrid -Online -Assign
+.\Get-WindowsAutoPilotInfo.ps1 -GroupTag shared -Online -Assign
 $Form.Close() # Schliesse das Programm
 })
 
