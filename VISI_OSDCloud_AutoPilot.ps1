@@ -65,9 +65,9 @@ $approfileTeile = $approfileZeile -split ":"
 $approfile = $approfileTeile[1].Trim()
 
 
-$rawImageUrl = "https://raw.githubusercontent.com/wbilab/osdcloud/main/Vi_Logo.png"
-Invoke-WebRequest $rawImageUrl -OutFile $workingDirectory"\Vi_Logo.png"
-$logo = Join-Path $workingDirectory "Vi_Logo.png"
+$rawImageUrl = "https://raw.githubusercontent.com/gorilla1968/osdcloud_wbilab/main/winxperts4all.png"
+Invoke-WebRequest $rawImageUrl -OutFile $workingDirectory"\winxperts4all.png"
+$logo = Join-Path $workingDirectory "winxperts4all.png"
 
 Save-Script -Name Get-WindowsAutoPilotInfo -Path $workingDirectory -Force
 
