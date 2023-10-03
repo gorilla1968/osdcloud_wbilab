@@ -76,7 +76,7 @@ Save-Script -Name Get-WindowsAutoPilotInfo -Path $workingDirectory -Force
 [void][System.Reflection.Assembly]::LoadWithPartialName('System.Windows.Forms')
 
 $Form = New-Object System.Windows.Forms.Form
-$Form.Text = "VISI AutoPilot Registrierung"
+$Form.Text = "WinXPerts4all AutoPilot Registrierung"
 $Form.Size = New-Object System.Drawing.Size(500, 450)
 $Form.FormBorderStyle = "FixedDialog"
 $Form.MaximizeBox = $false
@@ -98,7 +98,7 @@ $LogoPictureBox.Location = New-Object System.Drawing.Point(10, 20)
 
 # Erstelle den ersten Button (quadratisch und groesser)
 $Button1 = New-Object System.Windows.Forms.Button
-$Button1.Text = "AutoPilot`nRegistrierung`n`nTag: InCloud"
+$Button1.Text = "AutoPilot`nRegistrierung`n`nTag: Lab"
 $Button1.Size = New-Object System.Drawing.Size(100, 100)
 $Button1.Location = New-Object System.Drawing.Point(10, 120)
 $Button1.Add_Click({
@@ -111,7 +111,7 @@ $Form.Close() # Schliesse das Programm
 
 # Erstelle den zweiten Button (quadratisch und groesser)
 $Button2 = New-Object System.Windows.Forms.Button
-$Button2.Text = "AutoPilot`nRegistrierung`n`nTag: Hybrid"
+$Button2.Text = "AutoPilot`nRegistrierung`n`nTag: shared"
 $Button2.Size = New-Object System.Drawing.Size(100, 100)
 $Button2.Location = New-Object System.Drawing.Point(120, 120)
 $Button2.Add_Click({
