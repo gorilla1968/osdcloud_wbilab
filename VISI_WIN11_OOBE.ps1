@@ -34,7 +34,10 @@ $OSDCloudGUIParam = @'
                                 "Retail",
                                 "Volume"
                             ],
-    "OSEditionValues":  "Pro",
+    "OSEditionValues":  [
+                            "Pro",
+                            "Enterprise"
+                        ],
     "OSLanguageValues":  [
                                 "de-de",
                                 "fr-fr",
@@ -43,10 +46,12 @@ $OSDCloudGUIParam = @'
                             ],
     "OSNameValues":  [
                             "Windows 11 23H2 x64",
+                            "Windows 11 24H2 x64",
                             "Windows 10 22H2 x64"
                         ],
     "OSReleaseIDValues":  [
-                                "23H2"
+                                "23H2",
+                                "24H2"
                             ],
     "OSVersionValues":  [
                             "Windows 11",
@@ -59,7 +64,14 @@ $OSDCloudGUIParam = @'
     "updateNetworkDrivers":  true,
     "SkipAutopilot":  true,
     "SkitAutopilotOOBE":  true,
-    "SkipOOBEDeploy":  true
+    "SkipOOBEDeploy":  true,
+    "HPIAALL": false,
+    "HPIADrivers": true,
+    "HPIAFirmware": false,
+    "HPIASoftware": true,
+    "HPTPMUpdate": false,
+    "HPBIOSUpdate": true
+
 }
 '@
 If (!(Test-Path "X:\OSDCloud\Automate")) {
