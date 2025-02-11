@@ -71,7 +71,6 @@ $OSDCloudGUIParam = @'
     "HPIASoftware": true,
     "HPTPMUpdate": false,
     "HPBIOSUpdate": true
-
 }
 '@
 If (!(Test-Path "X:\OSDCloud\Automate")) {
